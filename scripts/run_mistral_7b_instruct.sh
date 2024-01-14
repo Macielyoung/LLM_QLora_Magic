@@ -1,0 +1,1 @@
+nohup deepspeed --include=localhost:0,1,2,3 ../SFT/train_mistral_7b_instruct_qlora.py --deepspeed --deepspeed_config ../finetuner/ds.json > ../logs/mistral_chinese_7b_instruct.log 2>&1 &

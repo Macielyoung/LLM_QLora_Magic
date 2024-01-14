@@ -1,0 +1,1 @@
+nohup deepspeed --include=localhost:0,1,2,3 ../SFT/train_qwen_14b_chat_qlora.py --deepspeed --deepspeed_config ../finetuner/ds.json > ../logs/qwen_14b_chat_task.log 2>&1 &
